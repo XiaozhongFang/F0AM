@@ -1,1 +1,8 @@
 Runs/*.mat
+
+# MATLAB auto-save files
+*.asv
+
+# Reasonix agent config
+.reasonix/
+reasonix.toml

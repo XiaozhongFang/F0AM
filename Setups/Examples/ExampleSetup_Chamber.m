@@ -83,7 +83,7 @@ BkgdConc = {...
 "GoParallel" can be utilized since each step is independent (assuming you have the parallel computing toolbox)
 %}
 
-ModelOptions.Verbose       = 1;
+ModelOptions.Verbose       = 3;
 ModelOptions.EndPointsOnly = 0;
 ModelOptions.LinkSteps     = 0;
 ModelOptions.IntTime       = 3*3600;
@@ -134,7 +134,7 @@ PlotReactivity('OH',S3,Reactants,'ptype','line');
 
 %finally, let's look at the total yield of HPALDs in the low-NOx case
 yieldWindow = [500 1000]; %time window, seconds
-PlotYield(S1,'C5H8',{'C5HPALD1','C5HPALD2'},yieldWindow);
+PlotYield(S1,'C5H8',{'C5HPALD1','C5HPALD2'},'twindow',yieldWindow);
 
 %% EVENTS
 % Finally, let's say you continue the second experiment for longer, but with more lights.
